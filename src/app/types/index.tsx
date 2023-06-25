@@ -1,4 +1,5 @@
 import { ReactNode, InputHTMLAttributes, MouseEventHandler } from "react";
+import { ImageProps } from "next/image";
 
 export interface Element {
   children: ReactNode;
@@ -108,4 +109,8 @@ export interface UsersContextProps {
   reachedEnd: boolean;
   showMore: () => Promise<UsersResponseProps[] | undefined>;
   reload: () => void;
+}
+
+export interface ImageWithFallbackProps extends ImageProps {
+  fallbackSrc: string;
 }

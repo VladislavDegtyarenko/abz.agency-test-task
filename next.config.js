@@ -6,7 +6,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "frontend-test-assignment-api.abz.agency",
         port: "",
-        pathname: "/images/users/**",
+        pathname: "/images/**",
       },
     ],
   },
