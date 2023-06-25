@@ -17,7 +17,9 @@
 }
 
 .nav {
-  list-style-type: none;
-  display: flex;
-  gap: 0.625em;
+  > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0.625em;
+  }
 }

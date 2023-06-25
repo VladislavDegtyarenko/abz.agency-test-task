@@ -12,12 +12,14 @@ const Header = () => {
           <Image src="/assets/Logo.svg" alt="logo" width={104} height={26} />
         </Link>
         <nav className={styles.nav}>
-          <li>
-            <Button href="#get">Users</Button>
-          </li>
-          <li>
-            <Button href="#post">Sign up</Button>
-          </li>
+          <ul>
+            <li>
+              <Button href="#get">Users</Button>
+            </li>
+            <li>
+              <Button href="#post">Sign up</Button>
+            </li>
+          </ul>
         </nav>
       </div>
     </SectionWrapper>
