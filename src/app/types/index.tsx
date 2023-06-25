@@ -35,7 +35,6 @@ export interface SectionWrapperProps extends Element {
   tag?: "header" | "footer" | "main" | "div";
   className?: string;
   id?: string;
-  backgroundImage?: string;
 }
 
 export interface AvatarProps {
