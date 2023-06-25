@@ -1,0 +1,21 @@
+@import "./../../variables/colors";
+
+.tooltipWrapper {
+  position: relative;
+}
+
+.tooltipLabel {
+  position: absolute;
+  color: $text-alt-color;
+  background-color: $text-color;
+  color: $text-alt-color;
+  // top: 100%;
+  // left: 50%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  padding: 3px 1em;
+  border-radius: 0.25em;
+  transform: translateX(-50%);
+  opacity: 0.87;
+}

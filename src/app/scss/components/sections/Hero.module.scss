@@ -1,0 +1,54 @@
+@import "./../../variables/colors";
+@import "./../../mixins/media-mixins";
+
+.hero {
+  padding: 2.5em 0 4.375em;
+  color: $text-alt-color;
+  position: relative;
+  @include md {
+    padding: 5.5em 0;
+  }
+
+  @include lg {
+    padding: 10.25em 0;
+  }
+}
+
+.content {
+  position: relative;
+  // z-index: 1;
+  max-width: 23.75em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > p {
+    margin-top: 1.32em;
+  }
+  > button,
+  a {
+    margin-top: 2em;
+  }
+}
+
+.bg {
+  // position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $text-color;
+    opacity: 0.5;
+  }
+}

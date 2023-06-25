@@ -1,0 +1,24 @@
+@import "./../../variables/colors";
+@import "./../../mixins/misc.module";
+
+.card {
+  padding: 1.25em;
+  border-radius: 0.625em;
+  background-color: $text-alt-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+
+  p,
+  a {
+    @include truncateText;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

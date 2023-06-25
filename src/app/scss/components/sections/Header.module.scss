@@ -1,0 +1,23 @@
+@import "./../../variables/screen-sizes";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.875em;
+  padding: 0.8125em 0;
+  max-width: $section-width-limit;
+  margin: 0 auto;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  gap: 0.625em;
+}

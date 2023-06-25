@@ -1,0 +1,52 @@
+@import "./../variables/colors";
+@import "./../components/ui/typography.module.scss";
+@import "./ui/InputField.module.scss";
+
+.form {
+  margin-top: 3.3em;
+  padding-bottom: 6.25em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 23.75em;
+  > fieldset {
+    margin-top: 2.75em;
+    border: none;
+    > * + * {
+      margin-top: 0.5em;
+    }
+  }
+  > label,
+  button {
+    margin-top: 3.25em;
+  }
+  > button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.successImage {
+  width: 328px;
+  height: 290px;
+  max-width: 100%;
+  position: relative;
+  margin-top: 3.125em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serverErrorMessage {
+  @extend .helper;
+  @extend .error;
+  position: relative;
+  text-align: center;
+  margin-top: 1em;
+  height: 0;
+  > p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

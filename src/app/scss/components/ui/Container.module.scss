@@ -1,0 +1,17 @@
+@import "./../../mixins/media-mixins";
+
+.container {
+  padding: 0 1em;
+
+  @include md {
+    padding: 0 2em;
+  }
+
+  @include lg {
+    padding: 0 3.75em;
+  }
+
+  @include xlg {
+    padding: 0 0;
+  }
+}

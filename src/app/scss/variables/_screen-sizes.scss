@@ -1,0 +1,14 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 320px;
+
+// Tablets and small desktops
+$screen-md-min: 768px;
+
+// Large tablets and desktops
+$screen-lg-min: 1024px;
+
+// X-Large screens
+$screen-xlg-min: 1200px;
+
+$section-width-limit: calc(1170px + 3.75em * 2);
+$section-width-limit: calc(1170px);
